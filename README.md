@@ -1,6 +1,8 @@
 # AmazonPollyAudioBook
 Simple Amazon Polly Audiobook Creation Program
 
+This fork contains a small bug fix that allows you to run the script on windows python installation.
+
 If you want to create audiobooks with amazon polly , you will need to create an AWS account, and get an aws key, and aws secret key. 
 Once you have that information, you will need to put the codes into the main program. 
 
