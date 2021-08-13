@@ -6,8 +6,8 @@ from contextlib import closing
 def pollytext(filename,pollyvoice):
 
 
-
-    with open(filename) as file:
+    #Added encoding='utf-8' to prevent errors in windows python
+    with open(filename, encoding='utf-8') as file: 
         text = file.read()
 
     polly_client = boto3.Session(
@@ -65,4 +65,4 @@ def pollytext(filename,pollyvoice):
 
 
 
-pollytext('bookwormvol1.txt','Amy')
+pollytext('audiobookname.txt','Amy')
